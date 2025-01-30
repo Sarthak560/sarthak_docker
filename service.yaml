@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-code-service
+  name: hello-world-service
 spec:
   type: NodePort   # Change from LoadBalancer to NodePort
   selector:
-    app: hello-world-code
+    app: hello-world
   ports:
     - protocol: TCP
       port: 80
